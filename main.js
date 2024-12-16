@@ -322,7 +322,7 @@ async function editTopicForLesson(lessonEditLink, requiredHeaders, topicName)
     const urlWithParams = new URL(lessonEditLink.toString());
 
     // The form constructor doesn't work. 
-    // Apparently, because 
+    // Apparently, because in the original API the form has to render once for this to work.
     const formData = new FormData();
 
     // const formData = urlWithParams.searchParams;
